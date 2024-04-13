@@ -1,0 +1,41 @@
+{% extends "pages/base.html" %}
+
+
+{% block mytitle%}/contact{%endblock mytitle%}
+
+{% block xyz%}
+
+
+<div style="margin-left: 22%; margin-right: 22%;">
+    <div style="text-align: center; padding: 20px;">
+
+
+<div>
+    <h1>contact us</h1>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Full Name</label>
+      <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your email address">
+    </div>
+    <div class="mb-3 form-check">
+        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Message</label>
+            <textarea type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your Message here" rows="5"></textarea>
+      </div>
+
+      <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+  </form>
+</div>
+
+{% endblock xyz %}
