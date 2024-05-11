@@ -11,25 +11,26 @@
 
 
 <div>
-    <h1>contact us</h1>
-<form>
+    <h1 style="  color: red;
+    background: black;">contact us</h1>
+<form action="/savethisdata" method="post">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Full Name</label>
-      <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="fname">
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Email</label>
-      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your email address">
+      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your email address" name="email">
     </div>
     <div class="mb-3 form-check">
         <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number">
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number" name="phn">
 
     </div>
 
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Message</label>
-            <textarea type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your Message here" rows="5"></textarea>
+            <textarea type="number"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Message here" rows="5" name="msg"></textarea>
       </div>
 
       <div style="text-align: center;">

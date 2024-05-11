@@ -1,0 +1,42 @@
+{% extends "pages/base.html" %}
+
+
+{% block mytitle%}/contact{%endblock mytitle%}
+
+{% block xyz%}
+
+
+<div style="margin-left: 22%; margin-right: 22%;">
+    <div style="text-align: center; padding: 20px;">
+
+
+<div>
+    <h1 style="  color: red;
+    background: black;">update data</h1>
+<form action="/updatedatanow/{{data.id}}" method="post">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Full Name</label>
+      <input type="text" value="{{data.username}}" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="fname">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Email</label>
+      <input type="email"  value="{{data.email}}" class="form-control" id="exampleInputPassword1" placeholder="Enter your email address" name="email">
+    </div>
+    <div class="mb-3 form-check">
+        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+        <input type="number"  value="{{data.phn_no}}" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number" name="phn">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Message</label>
+            <textarea type="number"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Message here" rows="5" name="msg">{{data.message}}</textarea>
+      </div>
+
+      <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary">update</button>
+</div>
+  </form>
+</div>
+
+{% endblock xyz %}
