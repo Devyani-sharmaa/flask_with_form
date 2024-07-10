@@ -4,27 +4,29 @@
 <div style="    padding-left: 7%;
 padding-right: 7;
 padding-top: 3%;">
-<div class="row">
+  <div class="row">
     {% for x in mydata %}
-    
+  
+
     <div class="col-sm-6 mb-3 mb-sm-0">
       <div class="card">
         <div class="card-body">
+          <img src="{{x.img_path}}" alt="">
           <h5 class="card-title">{{x.username}}</h5>
           <p class="card-text"><b>{{x.email}}</p>
-            <p class="card-text"><b>{{x.phone}}</p>
-                <p class="card-text"><b>Message</p>
-                  <div>
-                 <a href="/update/{{x.id}}"> <button type="button" class="btn btn-success">update</button></a>
-                 <a href="/deletethisdate/{{x.id}}"><button type="button" class="btn btn-danger">DELETE</button></a>  
-                  </div>
+          <p class="card-text"><b>{{x.phone}}</p>
+          <p class="card-text"><b>Message</p>
+          <div>
+            <a href="/update/{{x.id}}"> <button type="button" class="btn btn-success">update</button></a>
+            <a href="/deletethisdate/{{x.id}}"><button type="button" class="btn btn-danger">DELETE</button></a>
+          </div>
         </div>
 
       </div>
     </div>
-     {% endfor %}
-    
-    
-  
-</div>
-{% endblock xyz%}
+    {% endfor %}
+
+
+
+  </div>
+  {% endblock xyz%}

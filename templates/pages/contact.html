@@ -13,7 +13,7 @@
 <div>
     <h1 style="  color: red;
     background: black;">contact us</h1>
-<form action="/savethisdata" method="post">
+<form action="/savethisdata" method="post" enctype="multipart/form-data">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Full Name</label>
       <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="fname">
@@ -32,6 +32,11 @@
         <label for="exampleInputPassword1" class="form-label">Message</label>
             <textarea type="number"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Message here" rows="5" name="msg"></textarea>
       </div>
+      <div class="mb-3 form-check">
+        <label for="exampleInputPassword1" class="form-label">upload image</label>
+        <input type="file" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number" name="img">
+
+    </div>
 
       <div style="text-align: center;">
     <button type="submit" class="btn btn-primary">Submit</button>
